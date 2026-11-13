@@ -76,7 +76,7 @@ class AnimationViewController: UIViewController {
         let scaleAnimation = CABasicAnimation(keyPath: "transform.scale")
         
         scaleAnimation.fromValue = 1.0
-        scaleAnimation.toValue = 1.2
+        scaleAnimation.toValue = 1.3
         scaleAnimation.duration = 1
         scaleAnimation.repeatCount = .infinity
         scaleAnimation.autoreverses = true
