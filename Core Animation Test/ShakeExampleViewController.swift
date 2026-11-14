@@ -49,33 +49,7 @@ class ShakeExampleViewController: UIViewController {
     }
 }
 
-
-
-    /*let blueCircle = CALayer()
-     blueCircle.frame = CGRect(
-         x: 150,
-         y: 200,
-         width: 100,
-         height: 100
-     )
-     
-     blueCircle.backgroundColor =
-         UIColor.systemBlue.cgColor
-
-     blueCircle.cornerRadius = 50
-     
-     view.layer.addSublayer(blueCircle)
-     
-     let scaleAnimation = CABasicAnimation(keyPath: "transform.scale")
-     
-     scaleAnimation.fromValue = 1.0
-     scaleAnimation.toValue = 1.2
-     scaleAnimation.duration = 1
-     scaleAnimation.repeatCount = .infinity
-     scaleAnimation.autoreverses = true
-     scaleAnimation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
-
-     blueCircle.add(scaleAnimation, forKey: "scale")*/
+    
     
         
         
