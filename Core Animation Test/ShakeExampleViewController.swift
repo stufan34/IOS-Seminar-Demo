@@ -8,7 +8,10 @@
 import UIKit
 class ShakeExampleViewController: UIViewController {
     
-    private let passwordField = UITextField()
+    let passwordField = UITextField()
+    let correctPassword = "Password"
+    let button = UIButton(type: .system)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +20,7 @@ class ShakeExampleViewController: UIViewController {
     
     
     private func setupPasswordLayer(){
+        
         passwordField.frame = CGRect(
             x: 100,
             y: 400,
@@ -25,16 +29,31 @@ class ShakeExampleViewController: UIViewController {
         )
         
         
-        passwordField.layer.borderWidth = 1
+        passwordField.layer.borderWidth = 0.5
         passwordField.layer.cornerRadius = 10
         
-        passwordField.placeholder = "Enter password"
+        passwordField.placeholder = " Enter password"
         passwordField.isSecureTextEntry = true
         
         view.addSubview(passwordField)
         
-        shakeAnimation()
+        button.frame = CGRect(
+            x: 150,
+            y: 460,
+            width: 100,
+            height: 40
+        )
+        
+        button.setTitle("Log in", for: .normal)
+        button.layer.borderWidth = 0.5
+        button.layer.cornerRadius = 10
+        
+        button.addTarget(self, action: #selector(checkPassword), for: .touchUpInside)
+        
+        view.addSubview(button)
+        
     }
+
     
     private func shakeAnimation(){
         let animation = CAKeyframeAnimation()
@@ -47,9 +66,16 @@ class ShakeExampleViewController: UIViewController {
         //animation.repeatCount = .infinity
         passwordField.layer.add(animation, forKey: "shake")
     }
-}
 
-    
+
+  @objc private func checkPassword(){
+     if passwordField.text == correctPassword{
+         print("Correct Password")
+     } else {
+        shakeAnimation()
+    }
+  }
+}
     
         
         
