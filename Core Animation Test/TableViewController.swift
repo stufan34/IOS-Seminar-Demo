@@ -7,7 +7,7 @@
 
 // Source: jrasmusson on 2021-01-17.
 
-
+/*
 import UIKit
 
 class TableViewController: UITableViewController {
@@ -23,9 +23,9 @@ class TableViewController: UITableViewController {
     }
     
     let viewControllers = [
-        TableItem("Circles", AnimationViewController()),
-        TableItem("Example 2", AnimationViewController()),
-        TableItem("Example 3", AnimationViewController()),
+        TableItem("Circles", AnimationView()),
+        TableItem("Example 2", AnimationView()),
+        TableItem("Example 3", AnimationView()),
         
     ]
     
@@ -58,3 +58,4 @@ class TableViewController: UITableViewController {
         navigationController?.pushViewController(viewControllers[indexPath.row].viewController, animated: true)
     }
 }
+*/

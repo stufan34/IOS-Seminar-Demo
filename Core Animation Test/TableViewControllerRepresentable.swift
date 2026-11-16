@@ -4,6 +4,7 @@
 //
 //  Created by Süeda Tufan on 11.11.26.
 //
+/*
 import SwiftUI
 import UIKit
 
@@ -27,3 +28,4 @@ struct TableViewControllerRepresentable: UIViewControllerRepresentable {
         
     }
 }
+*/
